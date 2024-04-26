@@ -73,7 +73,7 @@ class Program
             TAB_letter = "F";
         }
 
-        Console.WriteLine($"Grade: {TAB_letter}");
+        Console.Write($"Grade: {TAB_letter} ");
 
         if (TAB_userNum >= 70)
         {
