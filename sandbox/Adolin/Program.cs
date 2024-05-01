@@ -36,5 +36,9 @@ class Program
                                 Console.WriteLine("tmit");
                             }
     
+    Class 4 notes:
+    blur_pull = []          List<int> blur_pull = new(); or List<int> blur_pull = new List<int>();
+    blur_pull.append(42)    blur_pull.Add(42);
                             
+    
     */
