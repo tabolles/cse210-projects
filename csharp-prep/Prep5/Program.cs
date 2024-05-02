@@ -34,5 +34,7 @@ class Program
         int squaredNumber = SquareNumber(number);
         DisplayResult(name, number, squaredNumber);
 
+        int GAY = 3;
+
     }
 }
