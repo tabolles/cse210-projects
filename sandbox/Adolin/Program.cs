@@ -5,9 +5,7 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
-    }
-}
-    /*
+            /*
     Class 3 notes:
     Python vs C#            int x = 0;
     if  x==0:               if (x==0){ 
@@ -42,3 +40,5 @@ class Program
                             
     
     */
+    }
+}

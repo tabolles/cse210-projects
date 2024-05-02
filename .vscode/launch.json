@@ -4,7 +4,7 @@
     "configurations": [
 
         {
-            "name": "Adolin",
+            "name": "Adolin Project",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-sandbox-Adolin",
