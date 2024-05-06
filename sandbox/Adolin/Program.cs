@@ -1,11 +1,8 @@
 ﻿namespace Adolin;
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello, World!");
-            /*
+
+    
+    /*
     Class 3 notes:
     Python vs C#            int x = 0;
     if  x==0:               if (x==0){ 
@@ -38,7 +35,31 @@ class Program
     blur_pull = []          List<int> blur_pull = new(); or List<int> blur_pull = new List<int>();
     blur_pull.append(42)    blur_pull.Add(42);
                             
-    
-    */
-    }
+
+    Class 5 notes 5/6/24:
+    UML - Unified Modeling Language
+    ------------------------------
+    | Name Course                |
+    ------------------------------
+    | Course Code                |
+    | Class name                 |
+    | NumberOfCredits            |
+    | Color                      |
+    ------------------------------
+    | Behaviors - methods        |
+    | display                    |
+    ------------------------------
+   */
+
+class Program
+{
+    static void Main(string[] args)
+    {   
+        Course course = new Course();
+        course._className = "Programming with Classes";
+        course._color = "green";
+        course._courseCode = "CSE 210";
+        course._numberOfCredits = 2;
+        course.Display();
+    }           
 }
