@@ -2,8 +2,17 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Hello Develop02 World!");
+
+        Journal journal = new();
+        string entry = journal.todayEntry();
+
+        Entries entries = new();
+        entries.AddEntry(entry);
+        entries.Save();
+        entries.Display();
+
+
     }
 }
