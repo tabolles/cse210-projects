@@ -1,0 +1,22 @@
+@startuml
+class Word{
+    +String _word
+    +bool _hidden
+    +checkWord(String word):bool
+}
+
+class Scripture{
+    +List<Word> _scripture
+
+    +hideWord(String word):void
+    +displayScripture():void
+    +checkHidden(String word):bool
+}
+
+class Reference{
+    +dictionary<String> _references
+    +List<String> _verse
+    +String _book
+    +String _scripture 
+}
+@enduml
