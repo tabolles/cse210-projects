@@ -1,0 +1,31 @@
+@startuml Develop03
+class Scripture{
+    +List<Word> _words
+
+    +hideWords()
+    +getText()
+    +completelyHidden()
+}
+
+class Reference{
+    +Dictionary<string, Dictionary<int, List<string>>> _reference
+    +string _book
+    +int _chapter
+    +int _verse
+
+    +List<string> getOneVerse(string book, int chapter, int verse): List<string>
+    +List<string> getMultipleVerses(string book, int chapter, int startVerse, int endVerse): List<string>
+}
+
+class Word{
+    +String _word
+    +String _hiddenWord
+
+    +String hide(string word)
+    +String show(string word)
+
+}
+
+Scripture "1" *-- "many" Word : contains
+Reference -- Scripture : provides >
+@enduml
