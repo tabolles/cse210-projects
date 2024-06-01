@@ -14,7 +14,7 @@ public class Scripture{
         }
     }
 
-    public Scripture(string[] scriptures) // multiple verses
+    public Scripture(string[] scriptures) // multiple verses 
     {
         _words = new List<Word>();
         foreach (string scripture in scriptures)
@@ -31,7 +31,11 @@ public class Scripture{
         for (int i = 0; i < 3; i++)
         {
             int index = _random.Next(_words.Count);
-            _words[index].hide();
+            if (_words[index].IsHidden())
+            {
+                i--;
+                continue;
+            }
         }
     }
 

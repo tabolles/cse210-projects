@@ -11,10 +11,15 @@ public class Word{
         _hiddenWord = new string('_', word.Length);
     }
 
-    public string hide()
+    public bool hide()
     {
         _hidden = true;
-        return _hiddenWord;
+        return _hidden;
+    }
+
+    public bool IsHidden()
+    {
+        return _hidden;
     }
 
     public string show()
