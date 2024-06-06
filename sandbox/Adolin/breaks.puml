@@ -1,0 +1,15 @@
+@startuml breaks
+Class Breaks{
+    
+
+    +slowdown()
+    +stop()
+}
+
+Class Drum{
+
+}
+
+Class Disc{
+    
+}

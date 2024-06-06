@@ -34,8 +34,17 @@ public class Scripture{
             if (_words[index].IsHidden())
             {
                 i--;
-                continue;
+                Console.WriteLine(i);
+                if (i < -2)
+                {
+                    break;
+                }
             }
+            else
+            {
+                _words[index].hide();
+            }
+            
         }
     }
 

@@ -1,0 +1,28 @@
+@startuml Develop04
+class Activity{
+    -int _duration;
+    -string _message;
+
+    +openingMessage(_message);
+    +timerAnimation(_duration);
+}
+
+together{
+    class Breathing{
+
+    }
+
+    class Reflect{
+
+    }
+    class Listing{
+
+    }
+}
+
+Breathing --|> Activity
+Reflect --|> Activity
+Listing --|> Activity
+@enduml
+
+

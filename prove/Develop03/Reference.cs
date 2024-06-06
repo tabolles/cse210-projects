@@ -27,6 +27,7 @@ public class Reference{
     public void hideRandom(){
         Scripture scripture = _reference[_currentReference];
         Console.Clear();
+        Console.WriteLine($"Reference: {_currentReference}");
         scripture.hideRandom();
         scripture.displayScripture();
     }
