@@ -6,14 +6,17 @@ class Program
     {
         Assignment assignment = new Assignment("Trevor", "Multiplication");
         Console.WriteLine(assignment.getSummary());
+        Console.WriteLine();
 
         MathAssignment assignment2 = new MathAssignment("Trevor Bolles", "Fractions", "7.3", "8-19");
         Console.WriteLine(assignment2.getSummary());
         Console.WriteLine(assignment2.getHomeworkList());
+        Console.WriteLine();
 
         WritingAssignment assignment3 = new WritingAssignment("Trevor Bolles", "European History", "The Causes of World War II");
         Console.WriteLine(assignment3.getSummary());
         Console.WriteLine(assignment3.getWritingInformation());
+        Console.WriteLine();
 
     }
 }
