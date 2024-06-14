@@ -9,7 +9,6 @@ class Program
         
 
         do{
-            Console.Clear();
             Console.WriteLine(@"Menu Options:
     1. Start breathing acivity
     2. Start reflecting activity
@@ -21,23 +20,25 @@ class Program
                 case 1:
                     Breathing breathing = new("Breathing Activity", "Breathing exercises are a great way to relax and reduce stress.");
                     breathing.breathingActivity();
+                    Console.Clear();
                     break;
                 case 2:
                     Reflection reflection = new("Reflection Activity", 
                     @"This activity will help you reflect on times in your life when you have shown strength and resilience. 
 This will help you recognize the power you have and how you can use it in other aspects of your life.");
                     reflection.reflectionActivity();
+                    Console.Clear();
                     break;
                 case 3:
                     Listing listing = new("Listing Acivity",
                     @"This acivity will help you reflect on the good things in your life by having you list 
 as many things as you can in a certain area");
                     listing.listingActivity();
+                    Console.Clear();
                     break;
                 case 4:
                     Console.WriteLine("Goodbye!");
                     break;
-
             }
         }while(choice != 4);
         

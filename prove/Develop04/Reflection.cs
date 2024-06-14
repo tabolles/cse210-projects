@@ -28,15 +28,9 @@ class Reflection : Activity
     {
         startActivity();
 
-        _duration = getDuration();
+        Console.WriteLine($"\n{_prompts[_random.Next(_prompts.Count)]}\n"); Thread.Sleep(2000);
 
-        Console.WriteLine($"\n{_prompts[_random.Next(_prompts.Count)]}\n");
-
-        Thread.Sleep(2000);
-
-        Console.WriteLine("Ready?...\n");
-
-        Thread.Sleep(2000);
+        Console.WriteLine("Ready?...\n"); Thread.Sleep(2000);
 
         int nextQuestion = 0;
 

@@ -18,6 +18,8 @@ class Activity{
     {
         Console.WriteLine($"Welcome to {_title}.\n");
         Console.WriteLine($"{_desc}\n");
+
+        _duration = getDuration();
     }
 
     public int getDuration()

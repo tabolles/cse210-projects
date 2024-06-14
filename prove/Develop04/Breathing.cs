@@ -8,8 +8,6 @@ class Breathing : Activity
     public void breathingActivity(){
 
         startActivity();    
-        
-        _duration = getDuration();
 
         DateTime end = DateTime.Now.AddSeconds(_duration);
         Console.Write("\nReady?...");

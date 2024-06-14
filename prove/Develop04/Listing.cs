@@ -17,17 +17,13 @@ class Listing : Activity{
     public void listingActivity(){
             
             startActivity();
-    
-            _duration = getDuration();
 
             Console.WriteLine($"\n{_prompts[_random.Next(_prompts.Count)]}\n");
     
-            // esablishes the start and end variables used specifically for testing 
-            DateTime start = DateTime.Now; DateTime end = DateTime.Now.AddSeconds(_duration); 
-            while (start < end)
+            DateTime end = DateTime.Now.AddSeconds(_duration);
+            while (DateTime.Now < end)
             {
                 _userInputs.Add(Console.ReadLine());
-                start = DateTime.Now;
             }
             
             Console.WriteLine($"\nYou were able to list {_userInputs.Count} items.\n");
