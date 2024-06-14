@@ -22,15 +22,16 @@ class Listing : Activity{
 
             Console.WriteLine($"\n{_prompts[_random.Next(_prompts.Count)]}\n");
     
-            DateTime end = DateTime.Now.AddSeconds(_duration);
-            while (DateTime.Now < end)
+            // esablishes the start and end variables used specifically for testing 
+            DateTime start = DateTime.Now; DateTime end = DateTime.Now.AddSeconds(_duration); 
+            while (start < end)
             {
                 _userInputs.Add(Console.ReadLine());
+                start = DateTime.Now;
             }
             
-            Console.WriteLine("You listed the following: ", string.Join(", ", _userInputs));
+            Console.WriteLine($"\nYou were able to list {_userInputs.Count} items.\n");
 
-    
             endActivity();
     }
 }
