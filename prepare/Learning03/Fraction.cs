@@ -4,6 +4,8 @@ public class Fraction{
     private int _top;
     private int _bottom;
 
+
+    //These are called different signatures
     public Fraction(){
         _top = 1;
         _bottom = 1;

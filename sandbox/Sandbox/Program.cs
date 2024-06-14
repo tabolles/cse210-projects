@@ -1,6 +1,22 @@
 using System;
 using static System.Console;
 
+
+class Prey
+{
+    public virtual void Run(){
+        WriteLine("The prey is running away.");
+    }
+}
+
+class Predator : Prey
+{
+    public override void Run(){
+        WriteLine("The predator is running after the prey.");
+    }
+}
+
+
 class Program
 {
     static void Main(string[] args)
@@ -11,10 +27,15 @@ class Program
         //     Console.WriteLine("The Most Interesting Thing.");
         // }
 
-        Prompt prompter = new Prompt();
-        string s = prompter.GeneratePrompt();
-        WriteLine(s);
-        string userResponse = ReadLine();
-        //code that gets date,time as a string
+        List<Prey> animals = new List<Prey>();
+
+        animals.Add(new Prey());
+        animals.Add(new Predator());
+        animals.Add(new Prey());
+        foreach (Prey animal in animals)
+        {
+            animal.Run();
+        }
+        
     }
 }
