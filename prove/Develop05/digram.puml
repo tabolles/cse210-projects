@@ -12,7 +12,6 @@ abstract class Goal{
     +totalScore()
     +collectPoints()
     +display()
-    +l)
 }
 
 class infiniteGoal{

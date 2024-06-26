@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop05 World!");
+        InfiniteGoal goal = new("This Goal is a test", "This is a test description", 3);
+        goal.getTotal();
+        goal.display();
     }
 }

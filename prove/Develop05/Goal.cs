@@ -1,11 +1,8 @@
-using System.ComponentModel;
-using System.Transactions;
-
 abstract class Goal{
     protected string _title;
     protected string _desc;
     protected int _score;
-    private int _totalScore;
+    protected int _totalScore;
 
     public Goal(string title, string desc) {
         _title = title; 
@@ -20,6 +17,10 @@ abstract class Goal{
             if (currentScore > previousScore){
                 _totalScore = currentScore;
             }
+        }
+        if (_score != 0)
+        {
+            _totalScore += _score;
         }
         return _totalScore;
     }
