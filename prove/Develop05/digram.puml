@@ -1,0 +1,39 @@
+@startuml goalplan
+
+
+
+abstract class Goal{
+    # _title: string
+    # _isComplete: boolean
+    # _goalDescription: string
+    - _cumulativeScore: int
+
+    + Goal(title: string, goalDescription: string)
+    +totalScore()
+    +collectPoints()
+    +display()
+    +l)
+}
+
+class infiniteGoal{
+    - _timesCompleted: int
+
+    infiniteGoal(string, string, int)
+    +collectPoints()
+    +display()
+    +displayString()
+
+}
+
+class simpleGoal{
+    + display(): void
+}
+
+class checklistGoal{
+    - _checklist: List<string>
+    + display(): void
+}
+
+Goal <|-- checklistGoal
+Goal <|-- infiniteGoal
+Goal <|-- simpleGoal
