@@ -1,0 +1,16 @@
+@startuml Foundation1
+
+Class Video{
+    -_title: String
+    -_author: string
+    -_length: int
+    -_comments: List<Comment>
+
+    +getCommentCount(): int
+    +displayComments(): void
+}
+
+Class Comment{
+    -_author: String
+    -_text: String
+}

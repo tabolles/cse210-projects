@@ -73,6 +73,7 @@ class Program
             }
         } while (choice != "6"); 
     }
+
     static void Main(string[] args)
     {
         menu();

@@ -1,0 +1,34 @@
+@startuml Foundation2
+Class Order{
+    -_customer: Customer
+    -_products: List<Products>
+    
+    +getTotal(): double
+    +getPackingLabel(): String
+    +getShippingLabel(): String
+}
+
+Class Product{
+    -_name: String
+    -_pricePerUnit: double
+    -_quantity: int
+
+    +getTotalPrice(): double
+}
+
+Class Customer{
+    -_name: String
+    -_address: Address
+
+    +isInUSA(): boolean
+}
+
+Class Address{
+    -_street: String
+    -_city: String
+    -_state: String
+    -_country: String
+
+    +isInUSA(): boolean
+    +getFullAddress(): String
+}

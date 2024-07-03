@@ -1,0 +1,37 @@
+@startuml Foundation3
+Class Event{
+    -_title: String
+    -_description: String
+    -_date: String
+    -_time: String
+    -_location: String
+
+    +genericDisplay(): void
+}
+
+Class Lectures{
+    -_speaker: String
+    -_capacity: int
+
+    +fullDetails(): void
+    +shortDescription(): void
+}
+
+Class Receptions{
+    -_rsvpEmail: String
+
+    +fullDetails(): void
+    +shortDescription(): void
+}
+
+Class OutdoorGathering{
+    -_weather: String
+
+    +fullDetails(): void
+    +shortDescription(): void
+
+}
+
+Receptions --|> Event
+Lectures --|> Event
+OutdoorGathering --|> Event

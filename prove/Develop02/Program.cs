@@ -15,6 +15,8 @@ class Program
             Console.WriteLine("-------------------------");
             Console.Write("Enter your choice: ");
             userInput = Convert.ToInt32(Console.ReadLine());
+
+            
             Journal journal = new();
             Entries entries = new();
 

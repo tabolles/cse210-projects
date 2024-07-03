@@ -1,0 +1,42 @@
+@startuml Foundation4
+Abstract Class Activity{
+    -_date: String
+    -_length: int
+
+    +getSummary(): String
+    +virtual distance(): double
+    +virtual speed(): double
+    +virtual pace(): double
+}
+
+Class Running{
+    -_distance: double
+
+    +override distance(): double
+    +override speed(): double
+    +override pace(): double
+}
+
+Class Cycling{
+    -_speed: double
+
+    +override distance(): double
+    +override speed(): double
+    +override pace(): double
+}
+
+Class Swimming{
+    -_lapNum: int
+
+    +override distance(): double
+    +override speed(): double
+    +override pace(): double
+}
+
+Class Program{
+    List<Activity> _activities
+}
+
+Activity <|-- Running
+Activity <|-- Cycling
+Activity <|-- Swimming
