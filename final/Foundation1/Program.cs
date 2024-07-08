@@ -30,8 +30,6 @@ class Program
         foreach (Video video in videos)
         {
             video.displayVideo();
-            
-    
         }
     }
 }
